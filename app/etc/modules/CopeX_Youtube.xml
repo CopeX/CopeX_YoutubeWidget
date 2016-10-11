@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <CopeX_Youtube>
+            <active>true</active>
+            <codePool>local</codePool>
+        </CopeX_Youtube>
+    </modules>
+</config>

@@ -1,0 +1,25 @@
+<?php
+/**
+ * CopeX GmbH https://copex.io
+ * Created by PhpStorm.
+ * User: roman
+ * Date: 11.10.16
+ * Time: 10:29
+ */
+
+$embedId = $this->getData('youtube_id');
+$playlistId = $this->getData('playlist_id');
+$width = $this->getData('width');
+$height = $this->getData('height');
+$title = $this->getData('title');
+?>
+    <h3 class="youtube-title"><?php echo $title; ?></h3>
+<?php if ($playlistId): ?>
+    <div class="youtube-embed youtube-playlist" id="<?php echo $embedId; ?>"
+         data-params="list=<?php echo $playlistId; ?>"
+         style="width:<?php echo $width; ?>px;height:<?php echo $height; ?>px;"></div>
+<?php else : ?>
+    <div class="youtube-embed youtube-video" id="<?php echo $embedId; ?>" data-params="list=<?php echo $embedId; ?>"
+         style="width:<?php echo $width; ?>px;height:<?php echo $height; ?>px;">
+    </div>
+<?php endif; ?>

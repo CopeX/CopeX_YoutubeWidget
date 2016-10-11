@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <CopeX_YoutubeWidget>
+            <version>0.1.0</version>
+        </CopeX_YoutubeWidget>
+    </modules>
+    <global>
+        <blocks>
+            <youtube_widget>
+                <class>CopeX_Youtube_Block</class>
+            </youtube_widget>
+        </blocks>
+        <helpers>
+            <youtube_widget>
+                <class>CopeX_Youtube_Helper</class>
+            </youtube_widget>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <copex_youtube>
+                    <file>youtube.xml</file>
+                </copex_youtube>
+            </updates>
+        </layout>
+    </frontend>
+</config>

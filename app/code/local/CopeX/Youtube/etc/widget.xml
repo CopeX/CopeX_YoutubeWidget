@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<widgets>
+    <youtube_video type="youtube_widget/embed" translate="name description" module="youtube_widget">
+        <name>Youtube Embeded Element</name>
+        <description type="desc">Adds a Youtube embed</description>
+        <parameters>
+            <title>
+                <label>Title</label>
+                <visible>1</visible>
+                <type>text</type>
+                <required>1</required>
+            </title>
+            <youtube_id>
+                <label>Youtube Video id</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+            </youtube_id>
+            <width>
+                <label>Width in pixel</label>
+                <visible>1</visible>
+                <type>text</type>
+                <description>enter the width in pixel. for example 640</description>
+            </width>
+            <height>
+                <label>Height in pixel</label>
+                <visible>1</visible>
+                <type>text</type>
+                <description>enter the height in pixel. for example 360</description>
+            </height>
+            <playlist_id translate="label">
+                <label>Playlist id</label>
+                <description>Check this box if the id is for playlist</description>
+                <visible>1</visible>
+                <required>0</required>
+                <type>text</type>
+            </playlist_id>
+        </parameters>
+    </youtube_video>
+</widgets>
